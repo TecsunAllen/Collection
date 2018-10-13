@@ -1,0 +1,20 @@
+/* components/single-time.wxss */
+.singleTime{
+    background-color:gray;
+    width: 50%;
+    font-size:16px;
+}
+
+.singleTimeAsideLeft{
+    float: left;
+    border-right-style:solid;
+    border-right-color: orange;
+}
+
+.singleTimeAsideRight{
+    float: right;
+    border-left-style:solid;
+    border-left-color: orange;
+}
+
+

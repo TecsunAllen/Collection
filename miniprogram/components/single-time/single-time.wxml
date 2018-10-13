@@ -1,0 +1,5 @@
+<!-- components/single-time.wxml -->
+<view class="singleTime {{aside=='left'?'singleTimeAsideLeft':'singleTimeAsideRight'}}">
+    <div>{{timeData.label}}({{timeData.time}})</div>
+    <div></div>
+</view>

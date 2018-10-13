@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "single-time":"/components/single-time/single-time"
+  }
+}

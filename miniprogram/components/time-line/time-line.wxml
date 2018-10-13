@@ -1,0 +1,4 @@
+<!-- 这是自定义组件的内部WXML结构 -->
+<view>
+  <single-time aside="{{index%2? 'right':'left'}}" timeData="{{item}}" wx:for="{{timeData}}"></single-time>
+</view>
