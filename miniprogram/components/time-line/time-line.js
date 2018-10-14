@@ -8,16 +8,17 @@ Component({
   },
   data: {
     // 这里是一些组件内部数据
-    timeData: [
-      {
-        time: "公元前1000-567",
-        label: '大唐'
-      },
-      {
-        time: "公元前2000-567",
-        label: '大宋'
-      }
-    ]
+    timeData: []
+  },
+  ready: function () {
+    wx.cloud.callFunction({
+      name: 'getAllData',
+      data: {}
+    }).then(res => {
+      this.setData({
+        timeData: res.result.data
+      });
+    });
   },
   methods: {
     // 这里是一个自定义方法

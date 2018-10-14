@@ -7,10 +7,6 @@ Component({
     timeData: {
       type: Object,
       value: {},
-    },
-    aside: {
-      type: String,
-      value: 'left'
     }
   },
 

@@ -1,8 +1,37 @@
 /* components/single-time.wxss */
+div{
+    display: block;
+}
+
 .singleTime{
-    background-color:gray;
-    width: 50%;
+    font-size:20px;
+    border-left-style:solid;
+    border-left-color: orange;
+    margin-left: 10px;
+    font-family: "楷体","楷体_GB2312","microsoft yahei";
+    margin-bottom: 20px;
+}
+
+.singleTime .dynastyPortrait{
+    width: 50px;
+    height:50px;
+    line-height: 50px;
+    text-align: center;
+    background-color:#0099FF;
+    border-radius: 100%;
+}
+
+.historyEvent{
+    margin-top: 5px;
+}
+
+.historyEvent .historyEventTitle{
+    font-size:18px;
+}
+
+.historyEvent .historyEventDetail{
     font-size:16px;
+    text-indent:33px;
 }
 
 .singleTimeAsideLeft{
@@ -15,6 +44,14 @@
     float: right;
     border-left-style:solid;
     border-left-color: orange;
+}
+
+.wordOverShowEllipsis{
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 
 

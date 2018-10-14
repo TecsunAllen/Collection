@@ -1,5 +1,11 @@
 <!-- components/single-time.wxml -->
-<view class="singleTime {{aside=='left'?'singleTimeAsideLeft':'singleTimeAsideRight'}}">
-    <div>{{timeData.label}}({{timeData.time}})</div>
-    <div></div>
+<view class="singleTime">
+    <div wx:if="{{timeData._id.length === 1}}" class="wordOverShowEllipsis">
+        <div class="dynastyPortrait">{{timeData.dynasty}}</div>
+        ({{timeData.timeRange}})
+    </div>
+    <div wx:if="{{timeData._id.length === 3}}" class='historyEvent'>
+        <div class='historyEventTitlt'>{{timeData.event}}</div>
+        <p class="historyEventDetail wordOverShowEllipsis">{{timeData.detail}}</p>
+    </div>
 </view>
